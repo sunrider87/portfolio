@@ -9,17 +9,72 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <title>PORTFOLIO</title>
+    <style>
+        .navbar {
+            position: fixed;
+            width: 100%;
+        }
+
+        #one {
+            padding-top: 140px;
+        }
+        .card{
+            font-size: 1rem;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <i class="far fa-asterisk"></i> My Portfolio
+            <i class="fas fa-caret-square-right"></i> My Portfolio
         </a>
     </nav>
+
+    <div id="one" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Hello!</h1>
+            <p class="lead">This is my page to introduce myself.<br>If you got an attractive things, pls contact me!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="display-4"><a id="two"><i class="fas fa-shoe-prints"></i> My footprint</a> <br><br>
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-center">
+                    <img src="image/baby.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Born!</h5>
+                        <p class="card-text">I was born in Pohang and lived in Seoul for 20 years. When you come in Seoul, I can guide you!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <img src="image/graduate.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">School</h5>
+                        <p class="card-text">I was graduated at Shinsung Elementry School, Shillim Middle School and Korea Digital Media High School. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <img src="image/college1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">College</h5>
+                        <p class="card-text">I'm attending hanyang university and major in bio-technolodge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
