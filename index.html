@@ -29,27 +29,46 @@
             font-size: 40px;
             font-style: italic;
         }
+
+        #footer{
+            text-align: center;
+            background-color: f8f9fa;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <i class="fas fa-caret-square-right"></i> My Portfolio
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-caret-square-right"></i> My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ang">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ang2">Footprint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ang3">Hobby</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div id="one" class="container">
-
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="image/clothes.jpg" alt="첫번째 슬라이드">
+                    <img class="d-block w-100" src="image/1.jpg" alt="첫번째 슬라이드">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="image/college.jpg" alt="두번째 슬라이드">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="image/school.jpg" alt="세번째 슬라이드">
+                    <img class="d-block w-100" src="image/clothes.jpg" alt="두번째 슬라이드">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -63,13 +82,16 @@
         </div>
         <br>
 
+        <hr><br>
         <h1 class="display-4 animated bounce delay-2s">Hello!</h1>
-        <p class="lead">This is my page to introduce myself.<br>If you got an attractive things, pls contact me!</p><br>
+        <p class="lead">This is my page to introduce myself.<br>If you got an attractive things, pls contact me!</p>
         <p class="lead">
             <a class="btn btn-primary btn-lg" href="#ang" role="button">Get Started!</a>
         </p>
+        <br>
+        <hr id="ang">
     </div>
-    <br id="ang">
+    <br>
     <br>
 
     <div id="two" class="container">
@@ -93,13 +115,11 @@
             <li>
                 <p class="lead">Major : Bio-Technolodge</p>
             </li>
-            <li>
-                <p class="lead">E-mail : batjs@naver.com</p>
-            </li>
         </ul>
     </div>
 
-    <br><br>
+    <br>
+    <hr id="ang2"><br><br>
 
     <div id="three" class="container">
         <h1 class="display-4"><i class="fas fa-shoe-prints"></i> My footprint</h1><br><br>
@@ -139,14 +159,9 @@
     </div>
 
     <br><br>
+    <hr id="ang3"><br><br>
 
     <div id="four" class="container">
-        <h1 class="display-4"><i class="fas fa-users"></i> My Family</h1>
-    </div>
-
-    <br><br>
-
-    <div id="five" class="container">
         <h1 class="display-4"><i class="fas fa-adjust"></i> Hobby</h1><br>
         <div class="row">
             <div class="col-4">
@@ -186,7 +201,7 @@
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
                         <p class="lead">Finally, I love playing <b id="game">Games</b>.<br><br>In house, I always played
                             games and My brothers too.<br>I have XBOX 360, Nintendo Switch and Many Steam Games.<br>And
-                            Also I love Online Games like LOL, BattleGround and so on.</p>
+                            Also I love Online Games like LOL, BattleGround™ and so on.</p>
                     </div>
                 </div>
             </div>
@@ -194,13 +209,19 @@
     </div>
 
     <br>
+    <br>
     <hr>
 
-    <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-        </div>
-    </footer>
+    <div id="footer" class="container">
+        <p class="lead">
+            <em>Thank you for visiting my website!</em><br>
+            <i class="fas fa-envelope"></i> : batjs@naver.com<br>
+            <i class="fab fa-facebook"></i> : <a href="https://www.facebook.com/batjs">here</a>
+            <i class="fab fa-instagram"></i> : <a href="https://www.instagram.com/sunrider0807/">here</a>
+            <i class="fab fa-github"></i> : <a href="https://github.com/sunrider87">here</a>
+
+        </p>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
